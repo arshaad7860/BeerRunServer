@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_category">
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.beerrunserver.ui.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.example.beerrunserver.ui.food_list.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" >
+        <action android:id="@+id/clearBackstack"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_category"
+            app:popUpToInclusive="true"
+            >
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.example.beerrunserver.ui.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order" >
+        <action android:id="@+id/clearBackstack"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_category"
+            app:popUpToInclusive="true"
+            >
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shipper"
+        android:name="com.example.beerrunserver.ui.shipper.ShipperFragment"
+        android:label="@string/menu_shipper"
+        tools:layout="@layout/fragment_shipper" >
+        <action android:id="@+id/clearBackstack"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_category"
+            app:popUpToInclusive="true"
+            >
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_best_deals"
+        android:name="com.example.beerrunserver.ui.best_deals.BestDealsFragment"
+        android:label="@string/menu_best_deals"
+        tools:layout="@layout/best_deals_fragment" >
+        <action android:id="@+id/clearBackstack"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_category"
+            app:popUpToInclusive="true"
+            >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_most_popular"
+        android:name="com.example.beerrunserver.ui.most_popular.MostPopularFragment"
+        android:label="@string/menu_most_popular"
+        tools:layout="@layout/most_popular_fragment" >
+        <action android:id="@+id/clearBackstack"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_category"
+            app:popUpToInclusive="true"
+            >
+
+        </action>
+    </fragment>
+
+</navigation>

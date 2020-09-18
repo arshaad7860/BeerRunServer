@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/img_category"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_category"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text=""
+        android:gravity="center_vertical"
+        android:fontFamily="@font/brandon_medium"
+        android:textColor="@android:color/white"
+        android:textSize="22sp">
+
+    </TextView>
+
+</FrameLayout>
